@@ -1,0 +1,93 @@
+/* 
+    Creation : 25-Jan-2023 
+    Author   : Manoj Raghavan
+    File     : styles.css
+
+    Version history and changes:
+    1.0 - Creation -
+          Alarm Clock App using:
+          HTML/CSS/JAVASCRIPT/LocalStorage/IIFE/Revealing Module Pattern/Event Delegation
+
+    2.0 - 
+*/
+
+body {
+color : white;
+}
+
+/* Alarm App */
+#app {
+    height : 400px;
+    width : 360px;
+    margin-top : 8% ;
+    margin-left :15%;
+    background-color: rgb(33, 44, 63);
+    border : 1px solid black;
+    display : flex;
+    justify-content: flex-start;
+    border-radius: 60px;
+    flex-direction: column;
+}
+
+/* Time Panel */
+#timePanel {
+    height : 40px;
+    width : 150px;
+    margin-top : 35px;   
+    align-self: center;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color :rgb(224, 130, 22)
+}
+
+/* Input Panel items */
+#inputPanel {
+    display : flex;
+    width : 280px;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 35px;
+    justify-content: space-between;
+
+}
+.inputTime {
+    display : flex;
+    flex-direction: row;
+}
+
+#hours, #minutes, #seconds, #ampm {
+    width : 40px;
+}
+
+#inputPanel button {
+    align-self: flex-end;
+    background-color: rgb(201, 40, 40);
+    color : white;
+}
+
+/* Display Panel items */
+#displaytitle {
+    width : 240px;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    color :rgb(224, 130, 22)
+}
+
+#display {
+    width : 280px;
+    margin-left: 35px;
+}
+
+.alarm {
+    display : flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#display button {
+    background-color: rgb(139, 215, 245);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- 
+    Creation : 25-Jan-2023 
+    Author   : Manoj Raghavan
+    File     : index.html
+
+    Version history and changes:
+    1.0 - Creation - 
+          Alarm Clock App using :
+          HTML/CSS/JAVASCRIPT/LocalStorage/IIFE/Revealing Module Pattern/Event Delegation
+    2.0 - 
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alarm Clock</title>
+  </head>
+
+  <body >
+    <main id="app"> 
+      <div id="timePanel"> 
+        <!-- Current time will be displayed here -->
+      </div>
+      <div id = "inputPanel">
+        <div id="inputTime" class ="inputTime">
+          <select id ="hours"> </select>:
+          <select  id ="minutes" > </select>:
+          <select id ="seconds" ></select>:
+          <select id ="am-pm" >:
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>       
+        </div>
+
+        <!-- Hour/Minute/Second Menu will be set here in JS code -->
+        <button id="setAlarm" class="setAlarm"> Set Alarm </button>
+      </div>
+
+      <div id="displaytitle"><b> <u>Alarms</u> :</b> </div>
+      
+      <div id ="display">
+        <!-- New Alarms will be added in the display here -->
+      </div>
+
+    </main>
+
+  </body>
+
+  <script src="alarmModule.js"></script>
+  <script type="text/javascript">
+    AlarmApp.initialize()
+  </script>
+
+  <script src="https://kit.fontawesome.com/790f36f3db.js" crossorigin="anonymous"></script>
+
+</html>
