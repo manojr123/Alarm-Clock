@@ -170,6 +170,7 @@ var AlarmApp = (function() {
         ampm.selected = ampm.selected < 10 ? "0" + ampm.selected: ampm.selected;
         console.log("hrs_selected" + hrs_selected);
     
+        // Build a new alarm object
         var alarm = {
             "time" : {"hours": hrs_selected,
                        "minutes" : min_selected,
@@ -179,9 +180,13 @@ var AlarmApp = (function() {
             "now" : Date.now()
         }
     
+        // Push the new alarm to the alarm list
         alarms.push(alarm);
-    
+
+        // Add the new alarm to the DOM
         addAlarmToDom(alarm);
+
+        // Update the local storage
         localStorage.setItem("alarms", JSON.stringify(alarms));
         
     }
@@ -200,6 +205,7 @@ var AlarmApp = (function() {
     
         console.log(alarms);
     
+        // Handle the click events for 'delete' and 'setAlarm' ie new alarm
         if ( event.target.className == 'delete') {
             var id = event.target.dataset.id;
             deleteAlarm(event.target.dataset.id);
